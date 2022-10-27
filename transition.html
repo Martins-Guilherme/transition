@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        .titulo {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 30px;
+        }
+        .titulo:hover{
+            transition-property: all 300ms linear;
+            color: red;
+        }
+        body {
+            background-color: rgb(231, 231, 231);
+        }
+        .container{
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: red;
+            transition: all .5s linear;
+            /*transition-property: all;
+            transition-delay: 1s;
+            transition-duration: 300ms;
+            */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: blue;
+            transition: all .5s linear;
+        }
+        .box:hover{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: red;
+            transform: rotate(360deg);
+        }
+        .container:hover {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: blue;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="titulo">Transitions css</h2>
+    </header>
+
+    <div class = "container">
+    </div>
+    <div class = "box">
+
+    </div>
+
+</body>
+</html>
